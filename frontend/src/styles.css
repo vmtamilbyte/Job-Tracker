@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6fb; color: #1b2333; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 16px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+header h1 { margin: 0; font-size: 22px; }
+header .ghost { margin-left: auto; }
+.muted { color: #6b7488; font-size: 13px; }
+input, textarea { width: 100%; padding: 8px; margin: 4px 0; border: 1px solid #ccd3e0; border-radius: 6px; font: inherit; }
+textarea { min-height: 70px; resize: vertical; }
+textarea.tall { min-height: 190px; }
+button { background: #2e5597; color: #fff; border: 0; padding: 8px 14px; border-radius: 6px; cursor: pointer; margin-top: 6px; }
+button.ghost { background: transparent; color: #2e5597; border: 1px solid #2e5597; margin: 0; }
+button.x { background: transparent; color: #b3261e; padding: 2px 0; font-size: 12px; }
+.panels { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.panel { background: #fff; padding: 14px; border-radius: 10px; box-shadow: 0 1px 3px #0001; }
+.panel h3 { margin: 0 0 6px; }
+.board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.col { background: #e8ecf5; border-radius: 10px; padding: 10px; min-height: 260px; }
+.col h4 { margin: 0 0 8px; display: flex; justify-content: space-between; }
+.card { background: #fff; border-radius: 8px; padding: 10px; margin-bottom: 8px; cursor: grab; box-shadow: 0 1px 2px #0002; }
+.badge { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 10px; margin-top: 4px; color: #fff; }
+.good { background: #2e7d32; } .mid { background: #ed8b00; } .low { background: #b3261e; }
+.due { color: #b3261e; font-size: 13px; font-weight: 600; }
+.note { font-size: 12px; color: #55607a; margin-top: 4px; }
+.err { color: #b3261e; font-size: 13px; margin: 4px 0; }
+.auth { max-width: 340px; margin: 12vh auto; background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px #0002; display: flex; flex-direction: column; gap: 4px; }
+.auth a { color: #2e5597; cursor: pointer; font-size: 13px; margin-top: 8px; text-align: center; }
+@media (max-width: 800px) { .board, .panels { grid-template-columns: 1fr; } }
