@@ -2,7 +2,7 @@
 
 Full-stack job application tracker: Kanban pipeline, follow-up reminders and a resume-vs-job-description match score.
 
-**Live demo:** https://YOUR-APP.onrender.com  <!-- replace after deploying -->
+**Live demo:**(https://job-tracker-z5hs.onrender.com/)  <!-- replace after deploying -->
 
 ## Features
 - JWT authentication (register / login), BCrypt password hashing, per-user data isolation
